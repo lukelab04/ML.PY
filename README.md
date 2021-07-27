@@ -13,14 +13,13 @@ import network
 from copy import deepcopy
 ```
 
-Next, we will define the input, output, and structure of the network. The structure defines both the number of layers and the amount of neurons in those layers. This network has 2 inputs, one hidden layer with 6 neurons, and 1 output.
+Next, we will define the input, output, and structure of the network. The structure defines both the number of layers and the amount of neurons in those layers. This network has 2 inputs, one hidden layer with 6 neurons, and 1 output. The number of inputs and outputs corresponds to the number of values in each subarray of the netinput and netoutput variable.
 ```
 netinput = [[0, 0],[1, 0],[0, 1],[1, 1]]
 netoutput = [[0],[1],[1],[0]]
 structure = [2, 6, 1]
 ```
 
-Note the shape of the input and output. There should be one outer array holding inner arrays of values.
 
 The next step is training the model. There are two functions we will use: train and resume. Resume takes a partially trained network as a paremeter, whereas train does not.
 
